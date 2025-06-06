@@ -2,7 +2,6 @@
 import IntegrationsCol from '@/components/IntegrationsCol'
 import Tag from '@/components/Tag'
 import { integrations } from '@/data/data'
-import Image from 'next/image'
 import React from 'react'
 
 
@@ -21,7 +20,7 @@ const Integration = () => {
                     <div className='h-[400px] lg:h-[800px] grid md:grid-cols-2 gap-4 mt-8 lg:mt-0 overflow-hidden [mask-image:linear-gradient(to_bottom,transparent,black_10%,black_90%,transparent)]'>
 
                         <IntegrationsCol integrations={integrations}/>
-                        <IntegrationsCol integrations={integrations.slice().reverse()} className='hidden md:flex'/>
+                        <IntegrationsCol integrations={integrations.slice().reverse()} reverse className='hidden md:flex'/>
                     </div>
                 </div>
             </div>
