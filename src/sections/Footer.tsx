@@ -8,7 +8,7 @@ const footerLinks = [
 ]
 const Footer = () => {
   return (
-    <section className='py-16'>
+    <section className='py-16 flex justify-center'>
         <div className='container'>
             <div className='flex items-center flex-col md:justify-between md:flex-row gap-6'>
                 <div>
